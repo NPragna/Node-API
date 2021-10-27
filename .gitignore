@@ -1,0 +1,10 @@
+node_modules/
+build
+.DS_Store
+*.tgz
+npm-debug.log
+run.log
+.vscode/
+.env
+application.log
+Logs
