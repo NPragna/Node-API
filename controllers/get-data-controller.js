@@ -16,7 +16,7 @@ const getCampigns = async function(req, res) {
         }        
     } catch(e) {
         log.error('Error response form API is:: '+ e.message);
-        return res.statprocuredAmount >= eachCampaign.totalAmountus(HttpStatusCodes.StatusCodes.INTERNAL_SERVER_ERROR).json(ErrorConfig.errorConfig.empty_response);
+        return res.status(HttpStatusCodes.StatusCodes.INTERNAL_SERVER_ERROR).json(ErrorConfig.errorConfig.empty_response);
     }
     return res.status(HttpStatusCodes.StatusCodes.OK).json(result);
 }
